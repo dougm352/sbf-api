@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us</title>
+<meta name="description" content="Contact Us about your Fair." />
+<link rel="stylesheet" href="contact2.css" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="includes/iframeResizer.contentWindow.min.js"></script>
+    
+<script type="text/javascript">
+	
+$(document).ready(function(){
+	$('#zip').mask('00000');
+});
+	
+</script>
+
+<script src="contact.js"></script>
+ 
+</head>
+
+<body id="contact">
+<div class="outer_container">
+<div class="container">
+
+<!-- Section 1 Start -->
+<div id="section_1" class="box_container_row">
+<div class="img"></div>	
+<div class="box_col">
+<div class="box2">
+<h1 class="blacktxt">Contact Us</h1>
+<p class="darkgraytxt">Learn about our safe and flexible <a href="https://bookfairs.scholastic.com/bookfairs/news/fair-options.html" target="_blank">Fair options</a> developed to help every school experience the magic of a Scholastic Book Fair.</p>
+</div>
+<div class="box2">	
+<div id="contact_search">
+<h11 class="darkgraytxt">Find the Book Fair location that services your school:</h11>
+<!-- <p style="font-size:13px; line-height:15px;">Zip Code</p> -->
+<div id="contact_search_form">
+<form id="search_form" onsubmit="return false">
+<label for="zip" class="visually_hidden">Enter Zip Code: </label><br>
+<input name="zip" type="text" id="zip" class="input" placeholder="Enter Zip Code" maxlength="5" />
+<input id="button" class="button" value="SEARCH" onclick="getBranch()" />
+</form>
+</div>	
+</div>	
+	
+<div id="contact_result" style="display:none;"></div>	
+	
+</div>
+</div>
+</div>
+<!-- Section 1 End -->
+	
+	
+</div>
+</div>
+	
+
+<!-- SBF tracker -->
+<img src="http://registration.scholasticbookfairs.com/webservices/dynacrops/email_tracker.php?promo=60002&tpl=Contact&action=O&email=&fid=&acctid=&title=Contact_Landing&campaign_name=Contact_Landing" width="1" height="1" />		
+ 
+	
+</body>
+</html>
