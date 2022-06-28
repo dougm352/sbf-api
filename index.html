@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Host a Book Fair | Scholastic Book Fairs</title>
+<meta name="description" content="Contact us about hosting a Fair." />
+<link rel="stylesheet" href="contact2.css" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="host_form.js"></script>
+</head>
+
+<body id="host">
+<div class="outer_container">
+<div class="container">
+
+
+<!-- Main Start -->
+<div id="main">
+<!-- Section 1 Start -->
+<div id="section_1" class="box_container_row">
+<div class="img"></div>	
+<div class="box_col">
+<div class="box2">
+<h1 class="blacktxt">Host a Book Fair</h1>
+<p class="darkgraytxt">Thank you for your interest in hosting a Scholastic Book Fair at your school. We're here and ready with new safe and flexible Fair options, no matter what your mode of learning.</p>
+</div>
+</div>
+</div>	
+	
+<div id="wavy_line"><img src="img/wavy-line-green-lg.png" alt="Wavy Line" /></div>	
+	
+<!-- Section 1 End -->
+	
+<!-- Section 2 Start -->
+<div id="section_3" class="box_container_row">
+	
+<div class="box_col">
+<div class="box2">
+<h1 class="blacktxt">Contact Us to Get Started</h1>
+<p class="darkgraytxt">Fill out the form, and a member of our team will contact you shortly to discuss the best Fair solution for your school setting. Required information is indicated by an asterisk (*).</p>
+
+<div id="host_form">
+<form id="host_form" onsubmit="return sendData()">
+<div class="col-2">
+<div class="input-container-1 spacer-right">
+<label for="fname">First Name <span class="redtxt">*</span></label>
+<input name="fname" type="text" id="fname" class="input" maxlength="30" required />
+</div>	
+<div class="input-container-1 spacer-left">
+<label for="lname">Last Name <span class="redtxt">*</span></label>
+<input name="lname" type="text" id="lname" class="input" maxlength="30" required />
+</div>
+</div>
+
+<div class="input-container-1">	
+<label for="position">Position <span class="redtxt">*</span></label>
+<select name="position" id="position" class="input" required>
+<option value="" >Please Select</option>
+<option value="Classroom Teacher" >Classroom Teacher</option>
+<option value="Librarian" >Librarian</option>
+<option value="Resource/Media Specialist" >Resource/Media Specialist</option>
+<option value="Computer/Technology Specialist" >Computer/Technology Specialist</option>
+<option value="Principal or Asst. Principal" >Principal or Asst. Principal</option>
+<option value="District Administrator" >District Administrator</option>
+<option value="Homeschooler" >Homeschooler</option>
+<option value="College Professor" >College Professor</option>
+<option value="Other Educator" >Other Educator</option>
+<option value="Book Fair Chairperson" >Book Fair Chairperson</option>
+<option value="Book Fair Volunteer" >Book Fair Volunteer</option>
+<option value="PTA Member" >PTA Member</option>
+<option value="Parent" >Parent</option>
+<option value="Student" >Student</option>
+<option value="Other" >Other</option>
+</select>	
+</div>
+
+<div class="input-container-2">	
+<label for="email">Email Address <span class="redtxt">*</span></label>
+<input name="email" type="text" id="email" class="input" maxlength="100" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="example@domain.com" title="Invalid email address" required />	
+</div>
+	
+<div class="col-2">
+<div class="input-container-3 spacer-right">	
+<label for="snl_zip">School Zip Code <span class="redtxt">*</span></label>
+<input name="snl_zip" type="text" id="snl_zip" class="input" maxlength="5" pattern="\d{5}" placeholder="#####" title="Invalid zip code" required />
+
+</div>
+<div class="input-container-2 spacer-left">
+<label for="snl_school">School Name <span class="redtxt">*</span></label>
+<input name="snl_school" type="text" id="snl_school" class="input" maxlength="100" required />
+</div>
+</div>
+
+<div class="input-container-2">	
+<label for="snl_address">School Address <span class="redtxt">*</span></label>
+<input name="snl_address" type="text" id="snl_address" class="input" maxlength="100" required />
+</div>	
+
+<div class="col-2">
+<div class="input-container-2 spacer-right">	
+<label for="snl_city">City <span class="redtxt">*</span></label>	
+<input name="snl_city" type="text" id="snl_city" class="input" maxlength="100" required />
+</div>	
+
+<div class="input-container-3 spacer-left">
+<label for="snl_state">State <span class="redtxt">*</span></label>
+<select name="snl_state" id="snl_state" class="input" required>
+<option value="0" selected="selected">Please Select</option>
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+<option value="CA">California</option>
+<option value="CO">Colorado</option>
+<option value="CT">Connecticut</option>
+<option value="DE">Delaware</option>
+<option value="DC">District Of Columbia</option>
+<option value="FL">Florida</option>
+<option value="GA">Georgia</option>
+<option value="HI">Hawaii</option>
+<option value="ID">Idaho</option>
+<option value="IL">Illinois</option>
+<option value="IN">Indiana</option>
+<option value="IA">Iowa</option>
+<option value="KS">Kansas</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="ME">Maine</option>
+<option value="MD">Maryland</option>
+<option value="MA">Massachusetts</option>
+<option value="MI">Michigan</option>
+<option value="MN">Minnesota</option>
+<option value="MS">Mississippi</option>
+<option value="MO">Missouri</option>
+<option value="MT">Montana</option>
+<option value="NE">Nebraska</option>
+<option value="NV">Nevada</option>
+<option value="NH">New Hampshire</option>
+<option value="NJ">New Jersey</option>
+<option value="NM">New Mexico</option>
+<option value="NY">New York</option>
+<option value="NC">North Carolina</option>
+<option value="ND">North Dakota</option>
+<option value="OH">Ohio</option>
+<option value="OK">Oklahoma</option>
+<option value="OR">Oregon</option>
+<option value="PA">Pennsylvania</option>
+<option value="RI">Rhode Island</option>
+<option value="SC">South Carolina</option>
+<option value="SD">South Dakota</option>
+<option value="TN">Tennessee</option>
+<option value="TX">Texas</option>
+<option value="UT">Utah</option>
+<option value="VT">Vermont</option>
+<option value="VA">Virginia</option>
+<option value="WA">Washington</option>
+<option value="WV">West Virginia</option>
+<option value="WI">Wisconsin</option>
+<option value="WY">Wyoming</option>
+<option value="OTHER">Other</option>
+</select>
+</div>
+</div>
+
+<div class="input-container-1">		
+<label for="phone">Phone Number </label>
+<input name="phone" type="tel" id="phone" class="input" maxlength="20" placeholder="(###) ###-####"/>
+</div>
+
+<div class="input-container-1">		
+<label for="acct">Account Number </label>
+<input name="acct" type="text" id="acct" class="input" maxlength="30" />
+</div>	
+
+<div class="col-2">
+<div class="input-container-3">	
+<label for="grade">Grade Levels <span class="redtxt">*</span><br><span style="color:#666666;">Select all that apply</span><br></label>
+<input type="checkbox" name="grade" id="K-6" value="1" /> K-6<br>
+<input type="checkbox" name="grade" id="K-8" value="2" /> K-8<br>
+<input type="checkbox" name="grade" id="K-12" value="3"/> K-12<br>
+<input type="checkbox" name="grade" id="PreK" value="4" /> Pre-School<br>
+<input type="checkbox" name="grade" id="MS" value="5" /> Middle School<br>
+<input type="checkbox" name="grade" id="HS" value="6" /> High School
+</div>
+
+<div class="input-container-3 spacer-left-lg">	
+<label for="students">Student Enrollment <span class="redtxt">*</span><br></label>	
+<input type="radio" name="students" value="1" required>50 or less<br>
+<input type="radio" name="students" value="2">50 - 125<br>
+<input type="radio" name="students" value="3">126 - 199<br>
+<input type="radio" name="students" value="4">200 - 500<br>
+<input type="radio" name="students" value="5">501 - 800<br>
+<input type="radio" name="students" value="6">801+
+</div>
+</div>
+
+<div class="col-2">	
+<div class="input-container-3">	
+<label for="startdate">Select Fair start date (at least 3 weeks from now)<br><span style="color:#666666;">Date to be confirmed based on availability</span><br></label>
+<input name="startdate" type="text" id="datepicker" class="input input-cal" maxlength="30" />
+</div>	
+	
+<div class="input-container-3 spacer-left-lg">	
+<label for="calltime">Best Time to Call <br><span style="color:#666666;">Please indicate AM or PM</span><br></label>
+<input name="calltime" type="text" id="calltime" class="input" maxlength="30" />
+<script>
+// Phone Formatter
+document.getElementById('phone').addEventListener('input', function (y) {
+    var a = y.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+        y.target.value = !a[2] ? a[1] : '(' + a[1] + ') ' + a[2] + (a[3] ? '-' + a[3] : '');
+    });
+</script>
+</div>
+</div>	
+
+<br>		
+<div class="btn"><input type="submit" id="button" class="button" value="SUBMIT" /></div>
+</form>
+</div>	
+</div>
+</div>
+</div>
+<!-- Section 2 End -->
+</div>
+<!-- Main End -->	
+
+<!-- Result Start -->
+<div id="result" style="display:none;">
+<div id="section_1" class="box_container_row">
+<div class="box_col">
+<div class="box2 fleshbg">
+<p class="redtxt">Your request has been received. Someone will be contacting you shortly.</p><br><h3>Thank you!</h3>
+</div>
+</div>
+<div class="box_col img"></div>
+</div>
+</div>	
+<!-- Result End -->
+
+</div>
+</div>
+	
+<!-- SBF tracker -->
+<img src="https://registration.scholasticbookfairs.com/webservices/dynacrops/email_tracker.php?promo=60002&tpl=HostFair&action=O&email=&fid=&acctid=&title=Host_Fair_Landing&campaign_name=Host_Fair_Landing" width="1" height="1" />		
+ 
+</body>
+</html>

@@ -1,3 +1,4 @@
+// const { type } = require("os");
 
 // Date Selector
 $( function() {
@@ -48,19 +49,24 @@ $( function() {
     data.append("calltime", document.getElementById("calltime").value);
   
   // Init Fetch Post
+  
+  /*
   let key = 'U0JGSG9zdEZhaXJGb3Jt';
   let h = new Headers();
-  h.append('x-api-key', key);
-  
-  fetch("https://registration.scholasticbookfairs.com/api/host-fair-form/", {
-  //fetch("../api/host-fair-form/dummyProcess.php", {  
+ h.append('x-api-key', key);
+*/
+
+ // fetch("https://registration.scholasticbookfairs.com/api/host-fair-form/", {  
+    fetch("https://registration.scholasticbookfairs.com/api/host-fair-form/test.php", {  
+    mode: "cors",  
     method: "POST",
-    headers: h,
+   // headers: h,
     body: data
   })
   
   // Return Server Response
   .then((result) => {
+    console.log(result.status);
     if (result.status != 200) {throw new Error("Bad Server Response"); }
     return result.text();
   })
